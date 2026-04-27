@@ -2,7 +2,7 @@
 
 Shared breadcrumb tracking library for CPC MCP servers. Provides crash-safe state for multi-step operations that span restarts, sessions, and agents.
 
-**Part of [CPC](https://github.com/josephwander-arch) (Copy Paste Compute)** — a multi-agent AI orchestration system built on Claude + MCP (Model Context Protocol). Related repos: [manager](https://github.com/josephwander-arch/manager) · [local](https://github.com/josephwander-arch/local) · [hands](https://github.com/josephwander-arch/hands) · [workflow](https://github.com/josephwander-arch/workflow) · [cpc-paths](https://github.com/josephwander-arch/cpc-paths)
+**Part of [CPC](https://github.com/AIWander) (Copy Paste Compute)** — a multi-agent AI orchestration system built on Claude + MCP (Model Context Protocol). Related repos: [manager](https://github.com/AIWander/manager) · [local](https://github.com/AIWander/local) · [hands](https://github.com/AIWander/hands) · [workflow](https://github.com/AIWander/workflow) · [cpc-paths](https://github.com/AIWander/cpc-paths)
 
 This crate is a dependency of CPC's MCP server binaries — most users won't install it directly; it's pulled in automatically via git tag when you build a CPC server from source.
 
@@ -12,7 +12,7 @@ Add to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-cpc-breadcrumbs = { git = "https://github.com/josephwander-arch/cpc-breadcrumbs.git", tag = "v0.3.1" }
+cpc-breadcrumbs = { git = "https://github.com/AIWander/cpc-breadcrumbs.git", tag = "v0.3.1" }
 ```
 
 ## What it does
@@ -89,7 +89,7 @@ Migration is idempotent -- safe to run multiple times. Once the legacy dir is re
 ## Build from Source
 
 ```bash
-git clone https://github.com/josephwander-arch/cpc-breadcrumbs.git
+git clone https://github.com/AIWander/cpc-breadcrumbs.git
 cd cpc-breadcrumbs
 cargo build
 ```
