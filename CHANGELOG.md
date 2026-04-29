@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [0.3.2] - 2026-04-29
+
+### Changed
+- ci: bump GitHub Actions versions to latest (Node.js 20 deprecation)
+
 ## [0.3.1] - 2026-04-20
 
 ### Changed
