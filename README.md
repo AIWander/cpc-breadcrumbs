@@ -62,11 +62,11 @@ fn main() -> anyhow::Result<()> {
 ## Storage layout
 
 ```
-Active:   C:\My Drive\Volumes\breadcrumbs\active\bc_{id}.json
-Archive:  C:\My Drive\Volumes\breadcrumbs\completed\{YYYY-MM-DD}\bc_{id}.json
+Active:   %CPC_VOLUMES%\breadcrumbs\active\bc_{id}.json
+Archive:  %CPC_VOLUMES%\breadcrumbs\completed\{YYYY-MM-DD}\bc_{id}.json
 ```
 
-Default storage is under `C:\My Drive\Volumes\breadcrumbs\` on Windows with Google Drive for Desktop installed (`My Drive` is the local mount point for Google Drive). Override via the `CPC_VOLUMES_PATH` environment variable.
+Default storage is under `%CPC_VOLUMES%\breadcrumbs\` on Windows (e.g. Google Drive for Desktop or any synced/local folder). Override via the `CPC_VOLUMES_PATH` environment variable.
 
 ### Migration (v0.2 to v0.3)
 
