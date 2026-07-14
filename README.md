@@ -2,7 +2,7 @@
 
 Shared breadcrumb tracking library for CPC MCP servers. Provides crash-safe state for multi-step operations that span restarts, sessions, and agents.
 
-**Part of [CPC](https://github.com/AIWander) (Copy Paste Compute)** — a multi-agent AI orchestration system built on MCP. Related repos: [manager-universal](https://github.com/AIWander/manager-universal) (manager/dashboard Beta and coming soon) · [local](https://github.com/AIWander/local) · [AI-Hands](https://github.com/AIWander/AI-Hands) · [workflow](https://github.com/AIWander/workflow) · [cpc-paths](https://github.com/AIWander/cpc-paths)
+**Part of [CPC](https://github.com/AIWander) (Copy Paste Compute)** — a multi-agent AI orchestration system built on MCP. Related repos: [manager-universal](https://github.com/AIWander/manager-universal) (manager/dashboard Beta and coming soon) · [AI-Hands](https://github.com/AIWander/AI-Hands) · [cpc-paths](https://github.com/AIWander/cpc-paths)
 
 This crate is a dependency of CPC's MCP server binaries — most users won't install it directly; it's pulled in automatically via git tag when you build a CPC server from source.
 
