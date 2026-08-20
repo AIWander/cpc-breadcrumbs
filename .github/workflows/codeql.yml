@@ -13,6 +13,14 @@ on:
 jobs:
   analyze:
     name: Analyze (Rust)
+    # Uploading results requires code scanning, which on a PRIVATE repo needs
+    # GitHub Advanced Security. This account has no GHAS (security_and_analysis
+    # is null), so every run here died on "Code scanning is not enabled for this
+    # repository" after burning a full Rust build. Skip instead of failing.
+    # The guard clears itself the moment the repo goes public or GHAS is added,
+    # so nothing has to be remembered later. `repository` is present on the push,
+    # pull_request and schedule payloads, so this is correct for every trigger.
+    if: github.event.repository.private == false
     runs-on: ubuntu-latest
     timeout-minutes: 360
     permissions:
